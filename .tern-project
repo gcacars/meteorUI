@@ -1,0 +1,19 @@
+{
+	"async": true,
+	"ecmaVersion": 6,
+    "libs": [
+        "reserved",
+        "ecma5",
+		"ecma6",
+        "browser",
+        "jquery",
+        "underscore"
+    ],
+    "plugins": {
+		"meteor": {}
+    },
+	"dontLoad": [
+		"node_modules/**",
+		".meteor/**"
+	]
+}

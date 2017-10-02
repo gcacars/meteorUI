@@ -1,0 +1,45 @@
+{
+  "name": "meteorui",
+  "productName": "Meteorui",
+  "version": "0.0.0",
+  "description": "My tiptop app",
+  "license": "MIT",
+  "repository": "gcacars/meteorui",
+  "author": {
+    "name": "Gabriel Anderson",
+    "email": "gcacars@gmail.com",
+    "url": "url.com"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "electron-context-menu": "^0.9.1",
+    "electron-debug": "^1.0.0",
+    "electron-window-state": "^4.1.1"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron-packager": "^8.0.0",
+    "electron": "^1.3.3",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}

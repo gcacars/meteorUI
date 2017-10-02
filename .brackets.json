@@ -1,0 +1,133 @@
+{
+    "brackets-trello.selected-board": "5436f4dbcf80317950cb7eb4",
+    "brackets-trello.selected-board-name": "Principal",
+    "brackets-trello.selected-list": "56024fd959ed76dcde9288c5",
+    "brackets-trello.selected-list-name": "Funcionalidades",
+    "closeBrackets": true,
+    "closeTags": {
+        "dontCloseTags": [],
+        "indentTags": [
+            "template",
+            "div",
+            "{{#each}}"
+        ],
+        "whenClosing": true,
+        "whenOpening": true
+    },
+    "code-folding.alwaysUseIndentFold": false,
+    "code-folding.enabled": true,
+    "code-folding.hideUntilMouseover": false,
+    "code-folding.saveFoldStates": true,
+    "code-folding.maxFoldLevel": 10,
+    "code-folding.minFoldSize": 2,
+    "codehint.AttrHints": true,
+    "codehint.CssPropHints": true,
+    "codehint.JSHints": true,
+    "codehint.SpecialCharHints": true,
+    "codehint.TagHints": true,
+    "codehint.SVGHints": true,
+    "codehint.UrlCodeHints": true,
+    "dragDropText": false,
+    "fileFilters": [
+        {
+            "name": "Javascript",
+            "patterns": [
+                ".html",
+                ".json",
+                ".less"
+            ]
+        }
+    ],
+    "fonts.fontSize": "15px",
+    "funcdocr.atName": "Gabriel Anderson",
+    "funcdocr.author_auto": true,
+    "highlightMatches": true,
+    "insertHintOnTab": true,
+    "interactive-linter.javascript": [
+        "jshint"
+    ],
+    "jscodehints.detectedExclusions": [
+        ".meteor", "node_modules"
+    ],
+    "jscodehints.noHintsOnDot": false,
+    "language": {
+        "javascript": {
+            "linting.prefer": [
+                "jshint"
+            ],
+            "linting.usePreferredOnly": true
+        }
+    },
+    "language.fileExtensions": {
+        "html": "handlebars"
+    },
+    "linting.enabled": true,
+    "linting.collapsed": true,
+    "maxCodeHints": 50,
+    "mitchellsimoens.file-tree-exclude.excludeList": [
+        ".meteor/local",
+        ".git(?!ignore)",
+        "bower_components",
+        "node_modules"
+    ],
+    "dimitrk.exclude-indexing-filetree.excludeList": [
+        ".meteor/local"
+    ],
+    "jwolfe.file-tree-exclude.list": [
+        ".meteor/local",
+        "node_modules",
+        "bower_components",
+        ".git"
+    ],
+    "prefUI.proxy-enabled": false,
+    "prefUI.proxy-string": "",
+    "scrollPastEnd": false,
+    "showCodeHints": true,
+    "showCursorWhenSelecting": true,
+    "smartIndent": true,
+    "softTabs": false,
+    "sortDirectoriesFirst": true,
+    "spaceUnits": 4,
+    "staticserver.port": "0",
+    "styleActiveLine": true,
+    "uppercaseColors": false,
+    "useTabChar": true,
+    "wordWrap": false,
+    "WakaTime.ignore": [
+        "^/tmp/",
+        "^/private/",
+        "^/.meteor/"
+    ],
+    "WakaTime.apikey": "cf3c6e06-27f5-4e17-9921-a8c22a7a4be0",
+    "jslint.options": {
+        "ass": false,
+        "bitwise": false,
+        "browser": true,
+        "closure": false,
+        "continue": false,
+        "couch": false,
+        "debug": true,
+        "devel": false,
+        "eqeq": false,
+        "es6": true,
+        "evil": false,
+        "forin": false,
+        "indent": 0,
+        "maxerr": 0,
+        "maxlen": 0,
+        "newcap": false,
+        "node": true,
+        "nomen": false,
+        "passfail": false,
+        "plusplus": true,
+        "regexp": false,
+        "rhino": false,
+        "sloppy": false,
+        "stupid": false,
+        "sub": false,
+        "todo": true,
+        "unparam": false,
+        "vars": false,
+        "white": false
+    }
+}

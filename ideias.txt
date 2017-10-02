@@ -1,0 +1,28 @@
+- criar (empty, básico, full, package)
+
+== Projetos == 
+- listar (remover)
+- executar
+- debugar
+- publicar Galaxy
+- atualizar (mostrar versões beta)
+- Plataformas
+- Abrir shell do mongo
+- Reset
+- Build (plataforma)
+- Shell (Meteor, Node)
+
+== Pacotes ==
+Instalar pacote (meteor x npm)
+Listar
+Pesquisar
+
+== Usuário ==
+Login/Conta
+
+
+dialog.showMessageBox({
+	type: 'info',
+	title: 'Information',
+	message: fs.existsSync('./locales/' + OSlocale + '.json').toString()
+});

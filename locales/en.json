@@ -1,0 +1,28 @@
+{
+	"ui.projects": "projects",
+	"ui.projects.add": "add",
+	"ui.projects.create": "create",
+	"ui.projects.contextmenu.remove": "Remove project",
+	"ui.welcome": "welcome",
+	"ui.packages": "packages",
+	"ui.packages.add.npm": "add npm",
+	"ui.packages.add.meteor": "add meteor",
+	"ui.packages.show.npm": "show NPM packages",
+	"ui.packages.show.mdg": "show MDG packages",
+	"ui.packages.filter": "find...",
+	"error.defaulttitle": "Houston, we have a problem!",
+	"error.project.getmeteorpackages": "Erro ao obter lista de pacotes do Meteor",
+	"Hello %s %s": "Hello %s %s",
+	"%d cat": {
+		"one": "%d cat",
+		"other": "%d cats"
+	},
+	"%d %s cat": {
+		"one": "%d %s cat",
+		"other": "%d %s cats"
+	},
+	"There is one monkey in the %s": {
+		"one": "There is one monkey in the %s",
+		"other": "There are %d monkeys in the %s"
+	}
+}

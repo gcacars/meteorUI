@@ -1,0 +1,15 @@
+{
+	"ui.projects": "projetos",
+	"ui.projects.add": "adicionar",
+	"ui.projects.create": "criar",
+	"ui.projects.contextmenu.remove": "Remover projeto",
+	"ui.welcome": "bem-vindo",
+	"ui.packages": "pacotes",
+	"ui.packages.add.npm": "adicionar npm",
+	"ui.packages.add.meteor": "adicionar meteor",
+	"ui.packages.show.npm": "mostrar pacotes NPM",
+	"ui.packages.show.mdg": "mostrar pacotes MDG",
+	"ui.packages.filter": "pesquisar...",
+	"error.defaulttitle": "Problema com o foguete",
+	"error.project.getmeteorpackages": "Erro ao obter lista de pacotes do Meteor"
+}
