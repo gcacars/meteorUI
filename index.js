@@ -104,7 +104,8 @@ ipcMain.on('start', function(e) {
 			'ui.packages.add.npm': i18n.__('ui.packages.add.npm'),
 			'ui.packages.add.meteor': i18n.__('ui.packages.add.meteor'),
 			'ui.packages.show.npm': i18n.__('ui.packages.show.npm'),
-			'ui.packages.show.mdg': i18n.__('ui.packages.show.mdg')
+			'ui.packages.show.mdg': i18n.__('ui.packages.show.mdg'),
+			'ui.packages.contextmenu.remove': i18n.__('ui.packages.contextmenu.remove'),
 		}
 	});
 });
@@ -177,7 +178,7 @@ function getProjectPackages(projectPath){
 	// Meteor packages
 	try {
 		const fsPackages = fs.readFileSync(path.join(projectPath, '.meteor/versions'), {
-			encoding: 'utf-8'
+			encoding: 'utf8'
 		});
 		const packages = fsPackages.split('\n');
 
@@ -188,6 +189,7 @@ function getProjectPackages(projectPath){
 
 			if (data.length === 2){
 				packageList.push({
+					id: data[0],
 					name: mdg ? data[0] : title[1] + ` (${data[0]})`,
 					version: data[1],
 					mdg,
@@ -222,7 +224,7 @@ ipcMain.on('project-select', function(e, project) {
 
 	// Get Meteor release
 	const fsRelease = fs.readFileSync(path.join(projectPath, '.meteor/release'), {
-		encoding: 'utf-8'
+		encoding: 'utf8'
 	});
 	const releaseVersion = fsRelease.split('\n')[0].split('@')[1];
 
@@ -242,4 +244,32 @@ ipcMain.on('project-select', function(e, project) {
 	};
 
 	e.sender.send('project-selected', returnObj);
+});
+
+ipcMain.on('package-remove', function(e, packageSelected){
+	// Edit Meteor packages file
+	const fsPackages = fs.readFileSync(path.join(packageSelected.projectPath, '.meteor/packages'), {
+		encoding: 'utf8'
+	});
+	const packages = fsPackages.split('\n').filter((package) => {
+		return package.indexOf(packageSelected.id) < 0;
+	});
+	const txtPackages = packages.join('\n');
+
+	fs.writeFileSync(path.join(packageSelected.projectPath, '.meteor/packages'), txtPackages, {
+		encoding: 'utf8'
+	});
+
+	// Edit Meteor versions file
+	const fsVersions = fs.readFileSync(path.join(packageSelected.projectPath, '.meteor/versions'), {
+		encoding: 'utf8'
+	});
+	const versions = fsVersions.split('\n').filter((version) => {
+		return version.indexOf(packageSelected.id) < 0;
+	});
+	const txtVersions = versions.join('\n');
+
+	fs.writeFileSync(path.join(packageSelected.projectPath, '.meteor/versions'), txtVersions, {
+		encoding: 'utf8'
+	});
 });

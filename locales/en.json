@@ -10,6 +10,7 @@
 	"ui.packages.show.npm": "show NPM packages",
 	"ui.packages.show.mdg": "show MDG packages",
 	"ui.packages.filter": "find...",
+	"ui.packages.contextmenu.remove": "Remove package",
 	"error.defaulttitle": "Houston, we have a problem!",
 	"error.project.getmeteorpackages": "Erro ao obter lista de pacotes do Meteor",
 	"Hello %s %s": "Hello %s %s",

@@ -93,7 +93,7 @@
 								<span data-bind="text: i18n('ui.packages.add.meteor')">add meteor</span>
 							</a>
 						</div>
-						<input type="search" class="form-control text-right mb-4" data-bind="attr: { placeholder: i18n('ui.packages.filter') }" placeholder="find...">
+						<input type="search" class="form-control text-right mb-4" data-bind="attr: { placeholder: i18n('ui.packages.filter')}, textInput: $root.currentFilter" placeholder="find...">
 						<div class="btn-group d-flex">
 							<label class="btn btn-sm btn-light w-100" data-bind="css: { active: showMDGpackages }">
 								<input type="checkbox" class="js-project-mdg" data-bind="checked: showMDGpackages" autocomplete="off">
@@ -108,7 +108,7 @@
 					</div>
 					<div class="mb-2" data-bind="if: projectCurrent" style="overflow-y: auto; height: calc(100vh - 320px);">
 						<div class="list-group pb-1" data-bind="foreach: projectCurrent().packages">
-							<a href="#" class="list-group-item" data-bind="visible: $root.showPackage($data)">
+							<a href="#" class="list-group-item" data-bind="visible: $root.showPackage($data), event: { mousedown: $root.setPackage }">
 								<i class="ic-npm mr-1" data-bind="visible: npm"></i>
 								<i class="ic-meteor mr-1" data-bind="visible: !npm"></i>
 								<span data-bind="text: name"></span>

@@ -8,7 +8,7 @@
   "author": {
     "name": "Gabriel Anderson",
     "email": "gcacars@gmail.com",
-    "url": "url.com"
+    "url": "https://github.com/gcacars/meteorUI"
   },
   "scripts": {
     "test": "xo",
@@ -22,12 +22,18 @@
   ],
   "keywords": [
     "electron-app",
-    "electron"
+    "electron",
+    "meteor"
   ],
   "dependencies": {
-    "electron-context-menu": "^0.9.1",
     "electron-debug": "^1.0.0",
-    "electron-window-state": "^4.1.1"
+    "electron-settings": "^3.1.2",
+    "electron-window-state": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "knockout": "^3.4.2",
+    "popper.js": "^1.12.5",
+    "y18n": "^3.2.1"
   },
   "devDependencies": {
     "devtron": "^1.1.0",

@@ -10,6 +10,7 @@
 	"ui.packages.show.npm": "mostrar pacotes NPM",
 	"ui.packages.show.mdg": "mostrar pacotes MDG",
 	"ui.packages.filter": "pesquisar...",
+	"ui.packages.contextmenu.remove": "Remover pacote",
 	"error.defaulttitle": "Problema com o foguete",
 	"error.project.getmeteorpackages": "Erro ao obter lista de pacotes do Meteor"
 }
